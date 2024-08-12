@@ -1,0 +1,9 @@
+services:
+  chess-app-backend:
+    build:
+      context: ./
+      target: development
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/usr/src/app
